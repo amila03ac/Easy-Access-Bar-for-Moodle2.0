@@ -4,9 +4,8 @@
  *@author Amila Ariyarathna
  *
  * This class is a block that will work as an addon for Moodle.
- * The function of the class is to get course updates and upcoming events of
- * courses that a particular user is enrolled to and displays them in a
- * convenient way. 
+ * The function of the class is to get course updates, forum posts,
+ * and upcoming events of courses that a particular user is enrolled.
  */
 	
 	require_once($CFG->dirroot.'../config.php');
