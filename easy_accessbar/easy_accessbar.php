@@ -1,4 +1,11 @@
 <?php
+/*--------------------------------------------------------------------------------------*/
+/*---------------------------  EASY ACCESS BAR FOR MOODLE2.0 ---------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*	By: Amila Ariyarathna																*/
+/*		Department of Computer Science and Engineering									*/
+/*		University of Moratuwa.															*/
+/*--------------------------------------------------------------------------------------*/
 
 require_once('course_updates.php');
 global $AddedActs, $UpdatedActs, $OtherAdded, $OtherUpdated, $UpcomingEvents, $ForumPosts, $userPic;
