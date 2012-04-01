@@ -22,10 +22,14 @@ $(document).ready(function(){
 			allowPageScroll: true
 		});
 	}
-		  
+	
+	if (!document.styleSheets[0].cssRules){  // IF IE        
+		IE = true;
+    }
 });
 	
 	var idArray = ['Assignment','Quiz','Resource','UE','Forum','Other'];
+	var IE = false;
 	
 	window.onfocus = function(){init();}
 
@@ -86,23 +90,30 @@ $(document).ready(function(){
  	 	var id = item.id;
  		if(shownList){
  			toggleDisplay(shownList);
- 			document.getElementById(shownList).style.backgroundColor = 'inherit';
- 			if(shownList==id){
+			changeBGColor('inherit', shownList);
+			
+ 			if(shownList==id){				
  				shownList=null;
  			}
  			else{ 				
  				toggleDisplay(id);
- 				document.getElementById(id).style.backgroundColor='white';
+				changeBGColor('white', id);
  				shownList = id;
  			} 			
  		}
  		else{ 			
        		toggleDisplay(id);
         	shownList = id;
-        	document.getElementById(id).style.backgroundColor='white';
+			changeBGColor('white', id);
         }
 		setMaxHeights();	
     } 
+	
+	function changeBGColor(color, id){
+		if(!IE){
+			document.getElementById(id).style.backgroundColor = color;
+		}
+	}
     
     function toggleDisplay(id){
     	

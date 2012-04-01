@@ -117,7 +117,9 @@ a.other {
 
 a.assignment:hover, a.resource:hover, a.quiz:hover, a.upcoming:hover, a.forum:hover, a.other:hover{
 	cursor:pointer;
+	background-color:silver\9;
 }
+
 
 span.count {
 	border:solid 1px #d83722;
@@ -192,6 +194,7 @@ div.userPic img{
 span.username, span.log{
 	position:relative;	
 	color:inherit;
+	color:white\9;
 	top:-10px;
 	height:100%;
 }
@@ -243,11 +246,13 @@ div.notifications{
 		margin-right:1px; 
 		height:auto;
 		color:#3b5998;
+		color:#3b5998\9;
 	}
 
 	li.listObj:hover{
-	 background:#588BAD;
-	 color:white;
+		background:#588BAD;
+		color:white;
+		color:white\9;
 	}
 	
 	a.NotifyTip{
@@ -282,10 +287,12 @@ div.notifications{
 		margin-left:5px; 
 		float:left;
 		color:inherit;
+		color:inherit\0;
 	}
 	
 	div.data1div a{
 		color: inherit;
+		color:inherit\9;
 		font-weight:600;
 		margin-right:0;
 	}
@@ -306,11 +313,13 @@ div.notifications{
 		height:auto; 
 		line-height: 100%;
 		float:left;
-		color:gray;
+		color:gray;		
+		color:gray\9;
 	}
 	
 	a.data1{
-		color: inherit;		
+		color: inherit;
+		color:inherit\9;		
 	 	display:block;
 	 	height:auto;
 		text-decoration:none;
@@ -321,7 +330,8 @@ div.notifications{
 	
     a.data2, a.data_forum{
 		display:block; 
-		color:inherit; 
+		color:inherit;
+		color:inherit\9; 
 		height:auto; 
 		padding-bottom:5px;
 		text-decoration:none;
