@@ -258,6 +258,8 @@ function print_bar_head(){
 	global $CFG;
 	$themelayoutwww = $CFG->wwwroot.'/theme/'.$CFG->theme.'/layout';
 	
+	echo '</br></br>'; /*Add or remove </br> tags to change the top position of Moodle page if the Easy access bar covers the top of Moodle page.*/
+	
 	echo '<link href="'.$themelayoutwww.'/easy_accessbar/css/easy_accessbar.css" rel="stylesheet" type="text/css"/>
 		<script src="'.$themelayoutwww.'/easy_accessbar/script/jquery_min.js" type="text/javascript"></script>
 		<script src="'.$themelayoutwww.'/easy_accessbar/script/easy_accessbar.js" type="text/javascript"></script>
